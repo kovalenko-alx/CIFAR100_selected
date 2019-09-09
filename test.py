@@ -35,7 +35,7 @@ def limited_set(data, target_list):
 
     for i in range(len(data.targets)):
 
-        if training_dataset.targets[i] in target_list:
+        if data.targets[i] in target_list:
             features_lim.append(data.data[i])
             labels_lim.append(data.targets[i])
 
